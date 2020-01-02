@@ -1,0 +1,21 @@
+{
+  "name": "docker-testing",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js",
+    "docker:build": "sudo docker build -t docker-testing .",
+    "docker:rebuild": "sudo docker rebuild -t docker-testing .",
+    "docker:run": "sudo docker run -it -p 8001:3000 docker-testing"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "express": "^4.17.1"
+  },
+  "dependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
